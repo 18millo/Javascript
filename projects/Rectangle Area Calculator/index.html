@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen font-sans text-gray-800 px-4">
+    <h1 class="text-2xl font-bold mb-6">Rectangular Area Calculator</h1>
+    
+    <!-- form container -->
+     <div class="bg-white p-6 rounded shadow-md w-full max-w-sm space-y-4">
+        <!-- width input -->
+         <div>
+            <label for="width" class="block text-sm font-medium">Width</label>
+            <input type="number" id="width" step="any"
+            class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="Enter width">
+         </div>
+         <!-- height input -->
+           <div>
+            <label for="width" class="block text-sm font-medium">Height</label>
+            <input type="number" id="height" step="any"
+            class="mt-1 w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+            placeholder="Enter width">
+         </div>
+         <!-- buttons -->
+         <div class="flex justify-between">
+            <button onclick="calculateArea()"
+              class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition">
+              Calculate
+            <button>
+            <button onclick="resetFields()"
+              class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded transition">
+              Reset
+            </button>
+         </div>
+         <!-- result -->
+          <p id="result" class="text-lg font-semibold text-center mt-4"></p>
+     </div>
+     <!-- javascript link -->
+      <script src="script.js"></script>
+</body>
+</html>
